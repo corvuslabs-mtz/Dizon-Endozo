@@ -942,7 +942,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: #9dad66;
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1839,5 +1839,27 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
+
+.inline-names {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.inline-names p {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+
+.inline-names strong {
+	display: inline-block;
+	white-space: nowrap;
+  display: inline;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
