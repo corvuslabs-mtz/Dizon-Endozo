@@ -1870,57 +1870,7 @@ form label {
   display: inline;
 }
 
-/* General styles to prevent overflow */
-body {
-  overflow-x: hidden; /* Prevent horizontal overflow */
-}
 
-.container {
-  max-width: 100%; /* Ensure containers do not exceed the viewport */
-  padding-left: 15px; /* Optional: Add padding to prevent content touching the edges */
-  padding-right: 15px; /* Optional: Add padding to prevent content touching the edges */
-}
-
-img {
-  max-width: 100%; /* Ensure images are responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Styles for screens 768px and below */
-@media screen and (max-width: 768px) {
-  .couple-half, .desc-groom, .desc-bride {
-      width: 100%; /* Ensure these elements take full width */
-      box-sizing: border-box; /* Include padding and border in the element's total width */
-  }
-
-  .col-md-8 {
-      width: 100%; /* Ensure columns stack on smaller screens */
-  }
-
-  /* Additional adjustments for specific elements */
-  .fh5co-heading {
-      padding-left: 15px; /* Optional: Add padding */
-      padding-right: 15px; /* Optional: Add padding */
-  }
-}
-
-/* Styles for screens 480px and below */
-@media screen and (max-width: 480px) {
-  .couple-half, .desc-groom, .desc-bride {
-      width: 100%; /* Ensure these elements take full width */
-      box-sizing: border-box; /* Include padding and border in the element's total width */
-  }
-
-  .col-md-8 {
-      width: 100%; /* Ensure columns stack on smaller screens */
-  }
-
-  /* Additional adjustments for specific elements */
-  .fh5co-heading {
-      padding-left: 10px; /* Optional: Add padding */
-      padding-right: 10px; /* Optional: Add padding */
-  }
-}
 
 
 /*# sourceMappingURL=style.css.map */
