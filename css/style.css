@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 992px;
+  height: 990px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -323,11 +323,28 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   z-index: 10;
 }
+
+
 @media screen and (max-width: 768px) {
-  .fh5co-cover {
-    height: 850px;
+  #fh5co-header.fh5co-cover {
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  #fh5co-header .display-t,
+  #fh5co-header .display-tc {
+    height: 100vh !important;
+    display: table !important;
+    width: 100% !important;
+  }
+
+  #fh5co-header .display-tc {
+    vertical-align: middle !important;
   }
 }
+
+
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
   height: 900px;
@@ -1080,7 +1097,7 @@ form label {
 .couple-half h3 {
   font-family: "wedding", Arial, serif;
   color: #505c45;
-  font-size: 45px;
+  font-size: 37px;
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1198,7 +1215,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
-    font-size: 90px;
+    font-size: 75px;
   }
 }
 .fh5co-heading p {
