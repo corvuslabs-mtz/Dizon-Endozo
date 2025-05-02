@@ -1871,8 +1871,24 @@ form label {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
+.container {
+  max-width: 100%; /* Ensure containers do not exceed the viewport */
+  padding-left: 15px; /* Optional: Add padding to prevent content touching the edges */
+  padding-right: 15px; /* Optional: Add padding to prevent content touching the edges */
+}
+
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-8 {
+      width: 100%; /* Ensure columns stack on smaller screens */
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
