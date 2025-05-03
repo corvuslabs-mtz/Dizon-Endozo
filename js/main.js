@@ -228,5 +228,28 @@
 		counterWayPoint();
 	});
 
+	// Get modal and link elements
+	var modal = document.getElementById("lenseModal");
+	var openModal = document.getElementById("openModal");
+	var closeBtn = document.getElementsByClassName("close-btn")[0];
+
+	// Open modal when the link is clicked (prevent default behavior)
+	openModal.addEventListener('click', function(event) {
+	event.preventDefault();  // Prevents opening the new tab
+	modal.style.display = "block";  // Show the modal
+	});
+
+	// Close modal when the "X" is clicked
+	closeBtn.onclick = function() {
+	modal.style.display = "none";  // Hide the modal
+	}
+
+	// Close modal if the user clicks anywhere outside of the modal
+	window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";  // Hide the modal if clicked outside
+	}
+	}
+
 
 }());
