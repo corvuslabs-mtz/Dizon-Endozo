@@ -1859,5 +1859,21 @@ button:hover {
   background-color: #45a049;
 }
 
+/* Default (desktop): inline */
+.name-line,
+.name-amp {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* Mobile: stack names */
+@media (max-width: 767px) {
+  .name-line,
+  .name-amp {
+    display: block;
+    margin: 0;
+    line-height: 1.2; /* tighter spacing */
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
