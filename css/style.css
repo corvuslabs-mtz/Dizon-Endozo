@@ -1031,6 +1031,34 @@ form label {
   /* words */
 }
 
+@media (max-width: 768px) {
+  .simply-countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .simply-countdown > .simply-section {
+    width: 80px;
+    height: 80px;
+    margin: 4px;
+  }
+
+  .simply-days-section { order: 1; }
+  .simply-hours-section { order: 2; }
+  .simply-minutes-section { order: 3; }
+  .simply-seconds-section { order: 4; }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 24px;
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 10px;
+  }
+}
+
 #fh5co-about,
 #fh5co-services,
 #fh5co-started,
