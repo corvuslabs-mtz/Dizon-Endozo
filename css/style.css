@@ -26,15 +26,17 @@
 * 	Template Style 
 *
 * ======================================================= */
-body {
+html, body {
+  overflow-x: hidden;
   font-family: "garamond", Arial, sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  margin: 0;
+  padding: 0;
 }
-
 #page {
   position: relative;
   overflow-x: hidden;
