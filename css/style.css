@@ -1806,14 +1806,17 @@ form label {
 
 .gallery-img {
   width: 100%;
+  max-width: 800px; /* Limits size on large screens */
   height: auto;
-  transform: scale(1); /* Zoomed out */
+  transform: scale(1);
   transition: transform 0.3s ease;
   display: block;
   margin: 0 auto;
   object-fit: cover;
-  border-radius: 12px; /* 👈 Rounded corners */
+  border-radius: 12px;
 }
+
+
 
 /* Modal Styles */
 .modal {
