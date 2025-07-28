@@ -251,5 +251,18 @@
 	}
 	}
 
+	const images = [
+	'images/album/img1.jpg',
+	'images/album/img2.jpg',
+	'images/album/img3.jpg'
+	];
+
+	let current = 0;
+	const slider = document.getElementById('auto-slider');
+
+	setInterval(() => {
+	current = (current + 1) % images.length;
+	slider.style.backgroundImage = `url(${images[current]})`;
+	}, 6000); // Change image every 3 seconds
 
 }());

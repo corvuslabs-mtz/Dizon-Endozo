@@ -265,6 +265,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
+
 .fh5co-video a {
   z-index: 1001;
   position: absolute;
@@ -1894,3 +1895,9 @@ button:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+#auto-slider {
+  transition: background-image 1s ease-in-out;
+  -webkit-transition: background-image 1s ease-in-out;
+}
