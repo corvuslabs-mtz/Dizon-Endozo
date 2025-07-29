@@ -141,19 +141,32 @@
 	};
 
 
-	var testimonialCarousel = function(){
-		var owl = $('.owl-carousel-fullwidth');
-		owl.owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 0,
-			responsiveClass: true,
-			nav: false,
-			dots: true,
-			smartSpeed: 800,
-			autoHeight: true,
-		});
-	};
+var testimonialCarousel = function () {
+  var owl = $('.owl-carousel-fullwidth');
+  owl.owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 0,
+    responsiveClass: true,
+    nav: false,
+    dots: true,
+    smartSpeed: 800,
+    autoHeight: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true
+  });
+
+  // ✅ Force refresh after everything is loaded (fixes first slide issue)
+  $(window).on('load', function () {
+    owl.trigger('refresh.owl.carousel');
+  });
+};
+
+$(document).ready(function () {
+  testimonialCarousel();
+});
+
 
 
 	var goToTop = function() {
