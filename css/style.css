@@ -1896,8 +1896,23 @@ button:hover {
 
 /*# sourceMappingURL=style.css.map */
 
-
+/* Image container */
 #auto-slider {
   transition: background-image 1s ease-in-out;
   -webkit-transition: background-image 1s ease-in-out;
+}
+
+/* Bottom padding for image on small screens */
+@media (max-width: 767px) {
+  .slider-mobile-pad {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+  .feature-left .feature-copy,
+  .feature-left .feature-copy p {
+    text-align: center !important;
+  }
+}
 }
